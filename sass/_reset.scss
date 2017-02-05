@@ -1,0 +1,30 @@
+body{
+    color: $night;
+    font-family: $font;
+    font-size: $normalSize;
+    @extend %mp0;
+    ul{
+        list-style: none;
+        @extend %mp0;
+    }
+    a{
+        text-decoration: none;
+        color: $night;
+    }
+    .fa{
+        cursor: default;
+    }
+    @for $h from 1 through 6{
+        h#{$h}{
+            @extend %mp0;
+            font-weight: $weight;
+        }
+    }
+    p{
+        @extend %mp0;
+    }
+    button{
+        border: 0;
+        border-radius: $radius;
+    }
+}

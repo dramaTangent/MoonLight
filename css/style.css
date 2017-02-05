@@ -1,0 +1,103 @@
+body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  margin: 0;
+  padding: 0; }
+
+.button, .button-night, .button-fire, .button-silver, .button-sky, .button-day {
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  padding: 16px; }
+
+.button-night {
+  background-color: #2a2a2a;
+  color: #aaaaaa; }
+  .button-night:hover {
+    transition: 0.3s;
+    background-color: #111111;
+    color: white; }
+    .button-night:hover a {
+      color: white; }
+  .button-night a {
+    display: block;
+    color: inherit; }
+
+.button-fire {
+  background-color: #e0382d;
+  color: white; }
+  .button-fire:hover {
+    transition: 0.3s;
+    background-color: #be261c;
+    color: white; }
+    .button-fire:hover a {
+      color: white; }
+  .button-fire a {
+    display: block;
+    color: inherit; }
+
+.button-silver {
+  background-color: #e2e2e2;
+  color: white; }
+  .button-silver:hover {
+    transition: 0.3s;
+    background-color: #c9c9c9;
+    color: white; }
+    .button-silver:hover a {
+      color: white; }
+  .button-silver a {
+    display: block;
+    color: inherit; }
+
+.button-sky {
+  background-color: #09afe3;
+  color: #edfafe; }
+  .button-sky:hover {
+    transition: 0.3s;
+    background-color: #0789b2;
+    color: white; }
+    .button-sky:hover a {
+      color: white; }
+  .button-sky a {
+    display: block;
+    color: inherit; }
+
+.button-day {
+  background-color: #fff;
+  color: white; }
+  .button-day:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6;
+    color: white; }
+    .button-day:hover a {
+      color: white; }
+  .button-day a {
+    display: block;
+    color: inherit; }
+
+body {
+  color: #2a2a2a;
+  font-family: "arial";
+  font-size: 16px; }
+  body ul {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: #2a2a2a; }
+  body .fa {
+    cursor: default; }
+  body h1 {
+    font-weight: 300; }
+  body h2 {
+    font-weight: 300; }
+  body h3 {
+    font-weight: 300; }
+  body h4 {
+    font-weight: 300; }
+  body h5 {
+    font-weight: 300; }
+  body h6 {
+    font-weight: 300; }
+  body button {
+    border: 0;
+    border-radius: 4px; }
+
+/*# sourceMappingURL=style.css.map */

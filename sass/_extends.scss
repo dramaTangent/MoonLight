@@ -1,0 +1,29 @@
+%mp0{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    border-radius: $radius;
+    text-align: center;
+    display: inline-block;
+    padding: $normalSize;
+}
+@each $name,$style in (night,$night),(fire,$fire),(silver,$silver),(sky,$sky),(day,$day){
+    .button-#{$name}{
+        @extend .button;
+        background-color: $style;
+        color: lighten($style,50%);
+        &:hover{
+            transition: $transition;
+            background-color: darken($style,10%);
+            color: lighten($style,100%);
+            a{
+                color: lighten($style,100%);
+            }
+        }
+        a{
+            display: block;
+            color: inherit;
+        }
+    }
+}
