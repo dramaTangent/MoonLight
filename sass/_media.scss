@@ -1,0 +1,83 @@
+@import "functions.scss";
+//defaultDevice
+@each $device,$maxWidth,$minWidth in (xLarge,3200px,1600px),(large,1600px,1200px),(medium,1200px,768px),(small,768px,320px),(xSmall,320px,0){
+    @media only screen and (max-width:$maxWidth) and (min-width:$minWidth){
+        @for $size from 1 through 12{//GRID
+            .grid-#{$size}-#{$device}{
+                width: grid($size);
+            }
+        }
+        @for $size from 1 through 12{//GRID LIST
+            .grid-list-#{$size}-#{$device}{
+                li{
+                    width: grid($size);
+                }
+            }
+        }
+        @each $display in (none,block,inline,inline-block){
+            .display-#{$display}-#{$device}{//DISPLAY
+                display: $display;
+            }
+        }
+        @each $display in (none,block,inline,inline-block){
+            .display-list-#{$display}-#{$device}{//DISPLAY LIST
+                li{
+                    display: $display;
+                }
+            }
+        }
+        @each $float in (left,right,none){//FLOAT
+            .float-#{$float}-#{$device}{
+                float: $float;
+            }
+        }
+        @each $float in (left,right,none){//FLOAT LIST
+            .float-list-#{$float}-#{$device}{
+                li{
+                    float: $float;
+                }
+            }
+        }
+        @each $text in (left,center,right){//TEXT(align)
+            .text-#{$text}-#{$device}{
+                text-align: $text;
+            }
+        }
+    }
+}
+
+
+
+//HATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+//MOBILEFIRST
+@each $device,$width in (xSmall,320px),(small,768px),(medium,1200px),(large,1600px),(xLarge,3200px){
+    @media only screen and (min-width:$width){
+        @for $size from 1 through 12{//GRID
+            .fgrid-#{$size}-#{$device}{
+                width: grid($size);
+            }
+        }
+        @each $display in (none,block,inline,inline-block){
+            .fdisplay-#{$display}-#{$device}{//DISPLAY
+                display: $display;
+            }
+        }
+        @each $display in (none,block,inline,inline-block){
+            .fdisplay-list-#{$display}-#{$device}{//DISPLAY LIST
+                li{
+                    display: $display;
+                }
+            }
+        }
+        @each $float in (left,right,none){//FLOAT
+            .ffloat-#{$float}-#{$device}{
+                float: $float;
+            }
+        }
+        @each $text in (left,center,right){//TEXT(align)
+            .ftext-#{$text}-#{$device}{
+                text-align: $text;
+            }
+        }
+    }
+}

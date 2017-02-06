@@ -1,7 +1,15 @@
+@import "functions.scss";
 
 @for $size from 1 through 12{//GRID NONDEVICE
     .grid-#{$size}{
         width: grid($size);
+    }
+}
+@for $size from 1 through 12{//GRID LIST NONDEVICE
+    .grid-list-#{$size}{
+        li{
+            width: grid($size);
+        }
     }
 }
 
@@ -24,71 +32,16 @@
         float: $float;
     }
 }
+ @each $float in (left,right,none){//FLOAT LIST NONDEVICE
+    .float-list-#{$float}{
+        li{
+            float: $float;
+        }
+    }
+}
 
 @each $text in (left,center,right){//TEXT(align) NONDEVICE
     .text-#{$text}{
         text-align: $text;
-    }
-}
-@each $device,$maxWidth,$minWidth in (xLarge,3200px,1600px),(large,1600px,1200px),(medium,1200px,768px),(small,768px,320px),(xSmall,320px,0){
-    @media only screen and (max-width:$maxWidth) and (min-width:$minWidth){
-        @for $size from 1 through 12{//GRID
-            .freegrid-#{$size}-#{$device}{
-                width: grid($size);
-            }
-        }
-        @each $display in (none,block,inline,inline-block){
-            .freedisplay-#{$display}-#{$device}{//DISPLAY
-                display: $display;
-            }
-        }
-        @each $display in (none,block,inline,inline-block){
-            .freedisplay-list-#{$display}-#{$device}{//DISPLAY LIST
-                li{
-                    display: $display;
-                }
-            }
-        }
-        @each $float in (left,right,none){//FLOAT
-            .freefloat-#{$float}-#{$device}{
-                float: $float;
-            }
-        }
-        @each $text in (left,center,right){//TEXT(align)
-            .freetext-#{$text}-#{$device}{
-                text-align: $text;
-            }
-        }
-    }
-}
-@each $device,$width in (xSmall,320px),(small,768px),(medium,1200px),(large,1600px),(xLarge,3200px){
-    @media only screen and (min-width:$width){
-        @for $size from 1 through 12{//GRID
-            .grid-#{$size}-#{$device}{
-                width: grid($size);
-            }
-        }
-        @each $display in (none,block,inline,inline-block){
-            .display-#{$display}-#{$device}{//DISPLAY
-                display: $display;
-            }
-        }
-        @each $display in (none,block,inline,inline-block){
-            .display-list-#{$display}-#{$device}{//DISPLAY LIST
-                li{
-                    display: $display;
-                }
-            }
-        }
-        @each $float in (left,right,none){//FLOAT
-            .float-#{$float}-#{$device}{
-                float: $float;
-            }
-        }
-        @each $text in (left,center,right){//TEXT(align)
-            .text-#{$text}-#{$device}{
-                text-align: $text;
-            }
-        }
     }
 }
