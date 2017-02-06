@@ -7,31 +7,31 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
   text-align: center;
   padding: 10.66667px; }
 
-.disabled {
-  opacity: 0.5;
-  cursor: default; }
-  .disabled:hover {
-    color: inherit !important;
-    background-color: inherit !important; }
+.textBox, .textBox-night, .textBox-night-reverse, .textBox-fire, .textBox-fire-reverse, .textBox-silver, .textBox-silver-reverse, .textBox-sky, .textBox-sky-reverse, .textBox-day, .textBox-day-reverse {
+  border: 0;
+  padding: 10.66667px; }
 
-.bg-night, .button-night, .button-night-reverse {
+.bg-transparent {
+  background-color: transparent !important; }
+
+.bg-night, .button-night, .button-night-reverse, .textBox-night, .textBox-night-reverse {
   background-color: #2a2a2a; }
 
 .text-night {
   color: #2a2a2a; }
   .text-night a {
-    color: #444444; }
+    color: #444444 !important; }
     .text-night a:hoveR {
       transition: 0.3s;
-      color: #2a2a2a; }
+      color: #2a2a2a !important; }
 
 .text-night-reverse {
   color: #2a2a2a; }
   .text-night-reverse a {
-    color: #111111; }
+    color: #111111 !important; }
     .text-night-reverse a:hoveR {
       transition: 0.3s;
-      color: #2a2a2a; }
+      color: #2a2a2a !important; }
 
 .button-night {
   color: #aaaaaa; }
@@ -45,24 +45,33 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
     transition: 0.3s;
     background-color: #444444; }
 
-.bg-fire, .button-fire, .button-fire-reverse {
+.textBox-night {
+  color: #aaaaaa; }
+
+.textBox-night-reverse {
+  color: black; }
+
+.border-night {
+  border: solid #2a2a2a; }
+
+.bg-fire, .button-fire, .button-fire-reverse, .textBox-fire, .textBox-fire-reverse {
   background-color: #e0382d; }
 
 .text-fire {
   color: #e0382d; }
   .text-fire a {
-    color: #e76259; }
+    color: #e76259 !important; }
     .text-fire a:hoveR {
       transition: 0.3s;
-      color: #e0382d; }
+      color: #e0382d !important; }
 
 .text-fire-reverse {
   color: #e0382d; }
   .text-fire-reverse a {
-    color: #be261c; }
+    color: #be261c !important; }
     .text-fire-reverse a:hoveR {
       transition: 0.3s;
-      color: #e0382d; }
+      color: #e0382d !important; }
 
 .button-fire {
   color: white; }
@@ -76,24 +85,33 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
     transition: 0.3s;
     background-color: #e76259; }
 
-.bg-silver, .button-silver, .button-silver-reverse {
+.textBox-fire {
+  color: white; }
+
+.textBox-fire-reverse {
+  color: #0c0202; }
+
+.border-fire {
+  border: solid #e0382d; }
+
+.bg-silver, .button-silver, .button-silver-reverse, .textBox-silver, .textBox-silver-reverse {
   background-color: #e2e2e2; }
 
 .text-silver {
   color: #e2e2e2; }
   .text-silver a {
-    color: #fcfcfc; }
+    color: #fcfcfc !important; }
     .text-silver a:hoveR {
       transition: 0.3s;
-      color: #e2e2e2; }
+      color: #e2e2e2 !important; }
 
 .text-silver-reverse {
   color: #e2e2e2; }
   .text-silver-reverse a {
-    color: #c9c9c9; }
+    color: #c9c9c9 !important; }
     .text-silver-reverse a:hoveR {
       transition: 0.3s;
-      color: #e2e2e2; }
+      color: #e2e2e2 !important; }
 
 .button-silver {
   color: white; }
@@ -107,24 +125,33 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
     transition: 0.3s;
     background-color: #fcfcfc; }
 
-.bg-sky, .button-sky, .button-sky-reverse {
+.textBox-silver {
+  color: white; }
+
+.textBox-silver-reverse {
+  color: #636363; }
+
+.border-silver {
+  border: solid #e2e2e2; }
+
+.bg-sky, .button-sky, .button-sky-reverse, .textBox-sky, .textBox-sky-reverse {
   background-color: #09afe3; }
 
 .text-sky {
   color: #09afe3; }
   .text-sky a {
-    color: #29c5f6; }
+    color: #29c5f6 !important; }
     .text-sky a:hoveR {
       transition: 0.3s;
-      color: #09afe3; }
+      color: #09afe3 !important; }
 
 .text-sky-reverse {
   color: #09afe3; }
   .text-sky-reverse a {
-    color: #0789b2; }
+    color: #0789b2 !important; }
     .text-sky-reverse a:hoveR {
       transition: 0.3s;
-      color: #09afe3; }
+      color: #09afe3 !important; }
 
 .button-sky {
   color: #edfafe; }
@@ -138,24 +165,33 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
     transition: 0.3s;
     background-color: #29c5f6; }
 
-.bg-day, .button-day, .button-day-reverse {
+.textBox-sky {
+  color: #edfafe; }
+
+.textBox-sky-reverse {
+  color: black; }
+
+.border-sky {
+  border: solid #09afe3; }
+
+.bg-day, .button-day, .button-day-reverse, .textBox-day, .textBox-day-reverse {
   background-color: #fff; }
 
 .text-day {
   color: #fff; }
   .text-day a {
-    color: white; }
+    color: white !important; }
     .text-day a:hoveR {
       transition: 0.3s;
-      color: #fff; }
+      color: #fff !important; }
 
 .text-day-reverse {
   color: #fff; }
   .text-day-reverse a {
-    color: #e6e6e6; }
+    color: #e6e6e6 !important; }
     .text-day-reverse a:hoveR {
       transition: 0.3s;
-      color: #fff; }
+      color: #fff !important; }
 
 .button-day {
   color: white; }
@@ -168,6 +204,15 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
   .button-day-reverse:hover {
     transition: 0.3s;
     background-color: white; }
+
+.textBox-day {
+  color: white; }
+
+.textBox-day-reverse {
+  color: gray; }
+
+.border-day {
+  border: solid #fff; }
 
 body {
   color: #2a2a2a;

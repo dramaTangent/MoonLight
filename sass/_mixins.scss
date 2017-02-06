@@ -2,13 +2,13 @@
     color: $from;
     a{
         @if $to == true{
-            color: lighten($from,10%);
+            color: lighten($from,10%) !important;
         }@else if $to == false{
-            color: darken($from,10%);
+            color: darken($from,10%) !important;
         }
         &:hoveR{
             transition: $transition;
-            color: $from;
+            color: $from !important;
         }
     }   
 }

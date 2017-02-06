@@ -9,14 +9,12 @@
     text-align: center;
     padding: $smallSize;
 }
-
-.disabled{
-    opacity: 0.5;
-    cursor: default;
-    &:hover{
-        color:  inherit !important;
-        background-color: inherit !important;
-    }
+.textBox{
+    border: 0;
+    padding: $smallSize;
+}
+.bg-transparent{
+    background-color: transparent !important;
 }
 
 @each $name,$style in (night,$night),(fire,$fire),(silver,$silver),(sky,$sky),(day,$day){
@@ -38,5 +36,18 @@
         @extend .button;
         @extend .bg-#{$name};
         @include button-reversation($style,false);
+    }
+    .textBox-#{$name}{
+        @extend .textBox;
+        color: lighten($style,50%);
+        @extend .bg-#{$name};
+    }
+    .textBox-#{$name}-reverse{
+        @extend .textBox;
+        color: darken($style,50%);
+        @extend .bg-#{$name};
+    }
+    .border-#{$name}{
+        border:solid $style; 
     }
 }
