@@ -5,25 +5,29 @@
 .button{
     border-radius: $radius;
     text-align: center;
-    display: inline-block;
-    padding: $normalSize;
+    padding: $smallSize;
 }
+
 @each $name,$style in (night,$night),(fire,$fire),(silver,$silver),(sky,$sky),(day,$day){
-    .button-#{$name}{
-        @extend .button;
+    .bg-#{$name}{
         background-color: $style;
+    }
+    .text-#{$name}{
         color: lighten($style,50%);
-        &:hover{
-            transition: $transition;
-            background-color: darken($style,10%);
-            color: lighten($style,100%);
-            a{
-                color: lighten($style,100%);
+        a{
+            color: lighten($style,40%);
+            &:hoveR{
+                transition: $transition;
+                color: lighten($style,50%);
             }
         }
-        a{
-            display: block;
-            color: inherit;
+    }
+    .button-#{$name}{
+        @extend .button;
+        @extend .bg-#{$name};
+        @extend .text-#{$name};
+        &:hover{
+            background-color: darken($style,10%);
         }
     }
 }
