@@ -2,80 +2,172 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
   padding: 0; }
 
-.button, .button-night, .button-fire, .button-silver, .button-sky, .button-day {
+.button, .button-night, .button-night-reverse, .button-fire, .button-fire-reverse, .button-silver, .button-silver-reverse, .button-sky, .button-sky-reverse, .button-day, .button-day-reverse {
   border-radius: 4px;
   text-align: center;
   padding: 10.66667px; }
 
-.bg-night, .button-night {
+.disabled {
+  opacity: 0.5;
+  cursor: default; }
+  .disabled:hover {
+    color: inherit !important;
+    background-color: inherit !important; }
+
+.bg-night, .button-night, .button-night-reverse {
   background-color: #2a2a2a; }
 
-.text-night, .button-night {
-  color: #aaaaaa; }
-  .text-night a, .button-night a {
-    color: #909090; }
-    .text-night a:hoveR, .button-night a:hoveR {
+.text-night {
+  color: #2a2a2a; }
+  .text-night a {
+    color: #444444; }
+    .text-night a:hoveR {
       transition: 0.3s;
-      color: #aaaaaa; }
+      color: #2a2a2a; }
 
-.button-night:hover {
-  background-color: #111111; }
+.text-night-reverse {
+  color: #2a2a2a; }
+  .text-night-reverse a {
+    color: #111111; }
+    .text-night-reverse a:hoveR {
+      transition: 0.3s;
+      color: #2a2a2a; }
 
-.bg-fire, .button-fire {
+.button-night {
+  color: #aaaaaa; }
+  .button-night:hover {
+    transition: 0.3s;
+    background-color: #111111; }
+
+.button-night-reverse {
+  color: black; }
+  .button-night-reverse:hover {
+    transition: 0.3s;
+    background-color: #444444; }
+
+.bg-fire, .button-fire, .button-fire-reverse {
   background-color: #e0382d; }
 
-.text-fire, .button-fire {
-  color: white; }
-  .text-fire a, .button-fire a {
-    color: #fae0df; }
-    .text-fire a:hoveR, .button-fire a:hoveR {
+.text-fire {
+  color: #e0382d; }
+  .text-fire a {
+    color: #e76259; }
+    .text-fire a:hoveR {
       transition: 0.3s;
-      color: white; }
+      color: #e0382d; }
 
-.button-fire:hover {
-  background-color: #be261c; }
+.text-fire-reverse {
+  color: #e0382d; }
+  .text-fire-reverse a {
+    color: #be261c; }
+    .text-fire-reverse a:hoveR {
+      transition: 0.3s;
+      color: #e0382d; }
 
-.bg-silver, .button-silver {
+.button-fire {
+  color: white; }
+  .button-fire:hover {
+    transition: 0.3s;
+    background-color: #be261c; }
+
+.button-fire-reverse {
+  color: #0c0202; }
+  .button-fire-reverse:hover {
+    transition: 0.3s;
+    background-color: #e76259; }
+
+.bg-silver, .button-silver, .button-silver-reverse {
   background-color: #e2e2e2; }
 
-.text-silver, .button-silver {
-  color: white; }
-  .text-silver a, .button-silver a {
-    color: white; }
-    .text-silver a:hoveR, .button-silver a:hoveR {
+.text-silver {
+  color: #e2e2e2; }
+  .text-silver a {
+    color: #fcfcfc; }
+    .text-silver a:hoveR {
       transition: 0.3s;
-      color: white; }
+      color: #e2e2e2; }
 
-.button-silver:hover {
-  background-color: #c9c9c9; }
+.text-silver-reverse {
+  color: #e2e2e2; }
+  .text-silver-reverse a {
+    color: #c9c9c9; }
+    .text-silver-reverse a:hoveR {
+      transition: 0.3s;
+      color: #e2e2e2; }
 
-.bg-sky, .button-sky {
+.button-silver {
+  color: white; }
+  .button-silver:hover {
+    transition: 0.3s;
+    background-color: #c9c9c9; }
+
+.button-silver-reverse {
+  color: #636363; }
+  .button-silver-reverse:hover {
+    transition: 0.3s;
+    background-color: #fcfcfc; }
+
+.bg-sky, .button-sky, .button-sky-reverse {
   background-color: #09afe3; }
 
-.text-sky, .button-sky {
-  color: #edfafe; }
-  .text-sky a, .button-sky a {
-    color: #bcedfc; }
-    .text-sky a:hoveR, .button-sky a:hoveR {
+.text-sky {
+  color: #09afe3; }
+  .text-sky a {
+    color: #29c5f6; }
+    .text-sky a:hoveR {
       transition: 0.3s;
-      color: #edfafe; }
+      color: #09afe3; }
 
-.button-sky:hover {
-  background-color: #0789b2; }
+.text-sky-reverse {
+  color: #09afe3; }
+  .text-sky-reverse a {
+    color: #0789b2; }
+    .text-sky-reverse a:hoveR {
+      transition: 0.3s;
+      color: #09afe3; }
 
-.bg-day, .button-day {
+.button-sky {
+  color: #edfafe; }
+  .button-sky:hover {
+    transition: 0.3s;
+    background-color: #0789b2; }
+
+.button-sky-reverse {
+  color: black; }
+  .button-sky-reverse:hover {
+    transition: 0.3s;
+    background-color: #29c5f6; }
+
+.bg-day, .button-day, .button-day-reverse {
   background-color: #fff; }
 
-.text-day, .button-day {
-  color: white; }
-  .text-day a, .button-day a {
+.text-day {
+  color: #fff; }
+  .text-day a {
     color: white; }
-    .text-day a:hoveR, .button-day a:hoveR {
+    .text-day a:hoveR {
       transition: 0.3s;
-      color: white; }
+      color: #fff; }
 
-.button-day:hover {
-  background-color: #e6e6e6; }
+.text-day-reverse {
+  color: #fff; }
+  .text-day-reverse a {
+    color: #e6e6e6; }
+    .text-day-reverse a:hoveR {
+      transition: 0.3s;
+      color: #fff; }
+
+.button-day {
+  color: white; }
+  .button-day:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6; }
+
+.button-day-reverse {
+  color: gray; }
+  .button-day-reverse:hover {
+    transition: 0.3s;
+    background-color: white; }
 
 body {
   color: #2a2a2a;

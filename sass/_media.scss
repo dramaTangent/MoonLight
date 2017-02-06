@@ -51,7 +51,7 @@
 
 //HATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 //MOBILEFIRST
-@each $device,$width in (xSmall,320px),(small,768px),(medium,1200px),(large,1600px),(xLarge,3200px){
+@each $device,$width in (xSmall,0),(small,320px),(medium,768px),(large,1200px),(xLarge,1600px){
     @media only screen and (min-width:$width){
         @for $size from 1 through $numberOfGrids{//GRID
             .fgrid-#{$size}-#{$device}{

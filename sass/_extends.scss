@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 %mp0{
     margin: 0;
     padding: 0;
@@ -8,26 +10,33 @@
     padding: $smallSize;
 }
 
+.disabled{
+    opacity: 0.5;
+    cursor: default;
+    &:hover{
+        color:  inherit !important;
+        background-color: inherit !important;
+    }
+}
+
 @each $name,$style in (night,$night),(fire,$fire),(silver,$silver),(sky,$sky),(day,$day){
     .bg-#{$name}{
         background-color: $style;
     }
     .text-#{$name}{
-        color: lighten($style,50%);
-        a{
-            color: lighten($style,40%);
-            &:hoveR{
-                transition: $transition;
-                color: lighten($style,50%);
-            }
-        }
+        @include text-reversation($style,true);
+    }
+    .text-#{$name}-reverse{
+        @include text-reversation($style,false);
     }
     .button-#{$name}{
         @extend .button;
         @extend .bg-#{$name};
-        @extend .text-#{$name};
-        &:hover{
-            background-color: darken($style,10%);
-        }
+        @include button-reversation($style,true);
+    }
+    .button-#{$name}-reverse{
+        @extend .button;
+        @extend .bg-#{$name};
+        @include button-reversation($style,false);
     }
 }
