@@ -1,11 +1,12 @@
 @import "functions.scss";
+@import "variables.scss";
 
-@for $size from 1 through 12{//GRID NONDEVICE
+@for $size from 1 through $numberOfGrids{//GRID NONDEVICE
     .grid-#{$size}{
         width: grid($size);
     }
 }
-@for $size from 1 through 12{//GRID LIST NONDEVICE
+@for $size from 1 through $numberOfGrids{//GRID LIST NONDEVICE
     .grid-list-#{$size}{
         li{
             width: grid($size);

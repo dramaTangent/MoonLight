@@ -1,13 +1,14 @@
 @import "functions.scss";
+@import "variables.scss";
 //defaultDevice
 @each $device,$maxWidth,$minWidth in (xLarge,3200px,1600px),(large,1600px,1200px),(medium,1200px,768px),(small,768px,320px),(xSmall,320px,0){
     @media only screen and (max-width:$maxWidth) and (min-width:$minWidth){
-        @for $size from 1 through 12{//GRID
+        @for $size from 1 through $numberOfGrids{//GRID
             .grid-#{$size}-#{$device}{
                 width: grid($size);
             }
         }
-        @for $size from 1 through 12{//GRID LIST
+        @for $size from 1 through $numberOfGrids{//GRID LIST
             .grid-list-#{$size}-#{$device}{
                 li{
                     width: grid($size);
@@ -52,7 +53,7 @@
 //MOBILEFIRST
 @each $device,$width in (xSmall,320px),(small,768px),(medium,1200px),(large,1600px),(xLarge,3200px){
     @media only screen and (min-width:$width){
-        @for $size from 1 through 12{//GRID
+        @for $size from 1 through $numberOfGrids{//GRID
             .fgrid-#{$size}-#{$device}{
                 width: grid($size);
             }
