@@ -44,13 +44,13 @@ body i{
     margin: 0 auto;
     position: relative;
 }
-.MoonSlider .MoonSliderSwitcher{
+.MoonSlider .switcher{
     background-color:rgba(38,38,38,.3);
     margin-top:200px;
     color: #f8f8f8;
     display: none;
 }
-.MoonSlider .MoonSliderSwitcher:hover{
+.MoonSlider .switcher:hover{
     transition: 0.3s;
     background-color:rgba(38,38,38,.5);
 }
@@ -58,25 +58,25 @@ body i{
     transition:0.3s;
     opacity: 0.95;
 }
-.MoonSlider:Hover >.MoonSliderSwitcher{
+.MoonSlider:Hover >.switcher{
     display: block;
 }
-.MoonSlider .MoonSliderSwitcher:first-child{
+.MoonSlider .switcher:first-child{
     position: absolute;
     left: 0;
     z-index: 10;
     text-align: center;
 }
-.MoonSlider .MoonSliderSwitcher:last-child{
+.MoonSlider .switcher:last-child{
     position: absolute;
     right: 0;
     text-align: center;
     z-index: 10;
 }
-.MoonSlider .MoonSliderImages{
+.MoonSlider .imageList{
     z-index: 0;
 }
-.MoonSlider .MoonSliderImages img{
+.MoonSlider .imageList img{
     position: absolute;
     
 }
@@ -112,10 +112,10 @@ body i{
         
         
                         <div class="MoonSlider">
-                            <div class="MoonSliderSwitcher w1">
+                            <div class="switcher w1 a">
                                 <h2><i class="fa fa-arrow-left" aria-hidden="true"></i></h2>
                             </div>
-                            <div class="MoonSliderImages" id="MoonSliderImageList">
+                            <div class="imageList">
                                 <img src="https://ae01.alicdn.com/kf/HTB1h2UtPXXXXXalapXXq6xXFXXXb.jpg" class="w12 h12">
                                 <img src="http://www.w3schools.com/css/trolltunga.jpg" class="w12 h12">
                                 <img src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg" class="w12 h12">
@@ -124,7 +124,7 @@ body i{
                                 <h2><p>TIME TO SHINE</p></h2>
                                 <small><p>trouble recovering your windows</p></small>
                             </div>
-                            <div class="MoonSliderSwitcher w1">
+                            <div class="switcher w1 b">
                                 <h2><i class="fa fa-arrow-right" aria-hidden="true"></i></h2>
                             </div>
                         </div>
@@ -152,6 +152,7 @@ body i{
         
         
         
+        <script src="scripts/animations.js"></script>
         <script src="scripts/slider.js"></script>
     </body>
 </html>
