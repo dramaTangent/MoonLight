@@ -1,13 +1,3 @@
-function childNodesToArray(childs){
-    var rArray=[];
-    var q=0
-    for(var i=1;i<childs.length;i+=2){
-        rArray[q]=childs[i];
-        q++
-    }
-    return rArray;
-}
-
 function Slider(className,index){
     this.sliderIndex=index;
     this.imageIndex=0;
@@ -54,17 +44,17 @@ function Slider(className,index){
             
         }
         this.sliderSwitchers[0].addEventListener("click",function(){
-            slider.imageIndex--;
-            fade(slider.sliderImages,function(){
-                slider.showImage(slider.imageIndex);
-                fade(slider.sliderImages,null,0,1);
+            Slider.imageIndex--;
+            fade(Slider.sliderImages,function(){
+                Slider.showImage(Slider.imageIndex);
+                fade(Slider.sliderImages,null,0,1);
             });
         });
         this.sliderSwitchers[1].addEventListener("click",function(){
-            slider.imageIndex++;
-            fade(slider.sliderImages,function(){
-                slider.showImage(slider.imageIndex);
-                fade(slider.sliderImages,null,0,1);
+            Slider.imageIndex++;
+            fade(Slider.sliderImages,function(){
+                Slider.showImage(Slider.imageIndex);
+                fade(Slider.sliderImages,null,0,1);
             });
         });
     }

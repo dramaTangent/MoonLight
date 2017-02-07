@@ -14,6 +14,10 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 .bg-transparent {
   background-color: transparent !important; }
 
+.chart, .chart-night, .chart-list-night li, .chartItem-night, .chart-fire, .chart-list-fire li, .chartItem-fire, .chart-silver, .chart-list-silver li, .chartItem-silver, .chart-sky, .chart-list-sky li, .chartItem-sky, .chart-day, .chart-list-day li, .chartItem-day {
+  border-radius: 4px;
+  height: 16px; }
+
 .bg-night, .button-night, .button-night-reverse, .textBox-night, .textBox-night-reverse {
   background-color: #2a2a2a; }
 
@@ -53,6 +57,16 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 
 .border-night {
   border: solid #2a2a2a; }
+
+.chart-night, .chart-list-night li {
+  background-color: #444444; }
+
+.chart-list-night {
+  height: auto; }
+
+.chartItem-night, .chart-list-night li {
+  background-color: #111111;
+  width: 10%; }
 
 .bg-fire, .button-fire, .button-fire-reverse, .textBox-fire, .textBox-fire-reverse {
   background-color: #e0382d; }
@@ -94,6 +108,16 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 .border-fire {
   border: solid #e0382d; }
 
+.chart-fire, .chart-list-fire li {
+  background-color: #e76259; }
+
+.chart-list-fire {
+  height: auto; }
+
+.chartItem-fire, .chart-list-fire li {
+  background-color: #be261c;
+  width: 10%; }
+
 .bg-silver, .button-silver, .button-silver-reverse, .textBox-silver, .textBox-silver-reverse {
   background-color: #e2e2e2; }
 
@@ -133,6 +157,16 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 
 .border-silver {
   border: solid #e2e2e2; }
+
+.chart-silver, .chart-list-silver li {
+  background-color: #fcfcfc; }
+
+.chart-list-silver {
+  height: auto; }
+
+.chartItem-silver, .chart-list-silver li {
+  background-color: #c9c9c9;
+  width: 10%; }
 
 .bg-sky, .button-sky, .button-sky-reverse, .textBox-sky, .textBox-sky-reverse {
   background-color: #09afe3; }
@@ -174,6 +208,16 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 .border-sky {
   border: solid #09afe3; }
 
+.chart-sky, .chart-list-sky li {
+  background-color: #29c5f6; }
+
+.chart-list-sky {
+  height: auto; }
+
+.chartItem-sky, .chart-list-sky li {
+  background-color: #0789b2;
+  width: 10%; }
+
 .bg-day, .button-day, .button-day-reverse, .textBox-day, .textBox-day-reverse {
   background-color: #fff; }
 
@@ -213,6 +257,16 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 
 .border-day {
   border: solid #fff; }
+
+.chart-day, .chart-list-day li {
+  background-color: white; }
+
+.chart-list-day {
+  height: auto; }
+
+.chartItem-day, .chart-list-day li {
+  background-color: #e6e6e6;
+  width: 10%; }
 
 body {
   color: #2a2a2a;
