@@ -16,11 +16,6 @@
 .bg-transparent{
     background-color: transparent !important;
 }
-.chart{
-    border-radius: $radius;
-    height: $normalSize;
-}
-
 @each $name,$style in (night,$night),(fire,$fire),(silver,$silver),(sky,$sky),(day,$day){
     .bg-#{$name}{
         background-color: $style;
@@ -53,21 +48,5 @@
     }
     .border-#{$name}{
         border:solid $style; 
-    }
-    .chart-#{$name}{
-        @extend .chart;
-        background-color: lighten($style,10%);
-    }
-    .chart-list-#{$name}{
-        height: auto;
-        li{
-            @extend .chart-#{$name};
-            @extend .chartItem-#{$name};
-        }
-    }
-    .chartItem-#{$name}{
-        @extend .chart;
-        background-color: darken($style,10%);
-        width: 10%;
     }
 }
