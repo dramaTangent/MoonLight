@@ -7,8 +7,149 @@
         <link rel="stylesheet" href="css/grid.css" type="text/css">
         <link rel="stylesheet" href="css/media.css" type="text/css" media="screen">
         <meta charset="utf-8">
+<style>
+        body{
+    margin-top:200px;
+}
+body i{
+    cursor: default;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.whiteC{
+    color: #fff;
+}
+.h12{
+    height: 100%;
+}
+.w1{
+    width: calc(100%/12);
+}
+.w12{
+    width: 100%;
+}
+.w8{
+    width: calc(100% - 100%/3);
+}
+.w4{
+    width: calc(100%/3);
+}
+.MoonSlider{
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.MoonSlider .MoonSliderSwitcher{
+    background-color:rgba(38,38,38,.3);
+    margin-top:200px;
+    color: #f8f8f8;
+    display: none;
+}
+.MoonSlider .MoonSliderSwitcher:hover{
+    transition: 0.3s;
+    background-color:rgba(38,38,38,.5);
+}
+.MoonSlider .text:hover{
+    transition:0.3s;
+    opacity: 0.95;
+}
+.MoonSlider:Hover >.MoonSliderSwitcher{
+    display: block;
+}
+.MoonSlider .MoonSliderSwitcher:first-child{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+}
+.MoonSlider .MoonSliderSwitcher:last-child{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.MoonSlider .MoonSliderImages{
+    z-index: 0;
+}
+.MoonSlider .MoonSliderImages img{
+    position: absolute;
+    
+}
+.MoonSlider .text{
+    position: absolute;
+    bottom: 25px;
+    cursor: default;
+    text-align: center;   
+    padding: 10px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+.MoonSlider .text h2{
+    margin: 0;
+    border-bottom:1px solid rgba(241,241,241,.3);
+}
+.MoonSlider .text h2 p{
+    margin: 5px;
+}
+        </style>
     </head>
     <body>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        <div class="MoonSlider">
+                            <div class="MoonSliderSwitcher w1">
+                                <h2><i class="fa fa-arrow-left" aria-hidden="true"></i></h2>
+                            </div>
+                            <div class="MoonSliderImages" id="MoonSliderImageList">
+                                <img src="https://ae01.alicdn.com/kf/HTB1h2UtPXXXXXalapXXq6xXFXXXb.jpg" class="w12 h12">
+                                <img src="http://www.w3schools.com/css/trolltunga.jpg" class="w12 h12">
+                                <img src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg" class="w12 h12">
+                                </div>
+                            <div class="text whiteC w8" style="background-color:rgba(0,89,167,.7);">
+                                <h2><p>TIME TO SHINE</p></h2>
+                                <small><p>trouble recovering your windows</p></small>
+                            </div>
+                            <div class="MoonSliderSwitcher w1">
+                                <h2><i class="fa fa-arrow-right" aria-hidden="true"></i></h2>
+                            </div>
+                        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         <script src="scripts/slider.js"></script>
