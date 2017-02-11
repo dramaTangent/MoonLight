@@ -2,19 +2,10 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
   padding: 0; }
 
-.button, .button-night, .button-night-reverse, .button-fire, .button-fire-reverse, .button-silver, .button-silver-reverse, .button-sky, .button-sky-reverse, .button-day, .button-day-reverse {
-  border-radius: 4px;
-  text-align: center;
-  padding: 10.66667px; }
-
-.textBox, .textBox-night, .textBox-night-reverse, .textBox-fire, .textBox-fire-reverse, .textBox-silver, .textBox-silver-reverse, .textBox-sky, .textBox-sky-reverse, .textBox-day, .textBox-day-reverse {
-  border: 0;
-  padding: 10.66667px; }
-
 .bg-transparent {
   background-color: transparent !important; }
 
-.bg-night, .button-night, .button-night-reverse, .textBox-night, .textBox-night-reverse {
+.bg-night {
   background-color: #2a2a2a; }
 
 .text-night {
@@ -33,28 +24,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #2a2a2a !important; }
 
-.button-night {
-  color: #aaaaaa; }
-  .button-night:hover {
-    transition: 0.3s;
-    background-color: #111111; }
-
-.button-night-reverse {
-  color: black; }
-  .button-night-reverse:hover {
-    transition: 0.3s;
-    background-color: #444444; }
-
-.textBox-night {
-  color: #aaaaaa; }
-
-.textBox-night-reverse {
-  color: black; }
-
-.border-night {
-  border: solid #2a2a2a; }
-
-.bg-fire, .button-fire, .button-fire-reverse, .textBox-fire, .textBox-fire-reverse {
+.bg-fire {
   background-color: #e0382d; }
 
 .text-fire {
@@ -73,28 +43,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #e0382d !important; }
 
-.button-fire {
-  color: white; }
-  .button-fire:hover {
-    transition: 0.3s;
-    background-color: #be261c; }
-
-.button-fire-reverse {
-  color: #0c0202; }
-  .button-fire-reverse:hover {
-    transition: 0.3s;
-    background-color: #e76259; }
-
-.textBox-fire {
-  color: white; }
-
-.textBox-fire-reverse {
-  color: #0c0202; }
-
-.border-fire {
-  border: solid #e0382d; }
-
-.bg-silver, .button-silver, .button-silver-reverse, .textBox-silver, .textBox-silver-reverse {
+.bg-silver {
   background-color: #e2e2e2; }
 
 .text-silver {
@@ -113,28 +62,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #e2e2e2 !important; }
 
-.button-silver {
-  color: white; }
-  .button-silver:hover {
-    transition: 0.3s;
-    background-color: #c9c9c9; }
-
-.button-silver-reverse {
-  color: #636363; }
-  .button-silver-reverse:hover {
-    transition: 0.3s;
-    background-color: #fcfcfc; }
-
-.textBox-silver {
-  color: white; }
-
-.textBox-silver-reverse {
-  color: #636363; }
-
-.border-silver {
-  border: solid #e2e2e2; }
-
-.bg-sky, .button-sky, .button-sky-reverse, .textBox-sky, .textBox-sky-reverse {
+.bg-sky {
   background-color: #09afe3; }
 
 .text-sky {
@@ -153,28 +81,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #09afe3 !important; }
 
-.button-sky {
-  color: #edfafe; }
-  .button-sky:hover {
-    transition: 0.3s;
-    background-color: #0789b2; }
-
-.button-sky-reverse {
-  color: black; }
-  .button-sky-reverse:hover {
-    transition: 0.3s;
-    background-color: #29c5f6; }
-
-.textBox-sky {
-  color: #edfafe; }
-
-.textBox-sky-reverse {
-  color: black; }
-
-.border-sky {
-  border: solid #09afe3; }
-
-.bg-day, .button-day, .button-day-reverse, .textBox-day, .textBox-day-reverse {
+.bg-day {
   background-color: #fff; }
 
 .text-day {
@@ -192,27 +99,6 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
     .text-day-reverse a:hoveR {
       transition: 0.3s;
       color: #fff !important; }
-
-.button-day {
-  color: white; }
-  .button-day:hover {
-    transition: 0.3s;
-    background-color: #e6e6e6; }
-
-.button-day-reverse {
-  color: gray; }
-  .button-day-reverse:hover {
-    transition: 0.3s;
-    background-color: white; }
-
-.textBox-day {
-  color: white; }
-
-.textBox-day-reverse {
-  color: gray; }
-
-.border-day {
-  border: solid #fff; }
 
 body {
   color: #2a2a2a;

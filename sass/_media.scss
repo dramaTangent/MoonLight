@@ -58,6 +58,11 @@
                 width: grid($size);
             }
         }
+        @for $size from 1 through $numberOfGrids{//GRIDList
+            .fgrid-list-#{$size}-#{$device}{
+                width: grid($size);
+            }
+        }
         @each $display in (none,block,inline,inline-block){
             .fdisplay-#{$display}-#{$device}{//DISPLAY
                 display: $display;
@@ -72,6 +77,11 @@
         }
         @each $float in (left,right,none){//FLOAT
             .ffloat-#{$float}-#{$device}{
+                float: $float;
+            }
+        }
+        @each $float in (left,right,none){//FLOAT LIST
+            .ffloat-list-#{$float}-#{$device}{
                 float: $float;
             }
         }
